@@ -35,4 +35,14 @@
     <string name="txtv_nomeplace">Nome:</string>
     <string name="txtv_cpfplace">CPF:</string>
     <string name="txtv_senhaplace">Senha:</string>
+    <string name="btn_note">Adicionar Anotação</string>
+    <string name="txt_namenote">Título da Anotação</string>
+    <string name="txt_descrinote">Digite a descrição da Anotação</string>
+    <string name="edit_notetitle"></string>
+    <string name="edit_notedescri"></string>
+    <string name="btnsavenote">Salvar</string>
+    <string name="btn_add_note">Adicionar</string>
+    <string name="edit_add_title">Adicione o Titulo da Anotação</string>
+    <string name="edit_add_descri">Adicione a Descrição da Anotação</string>
+    <string name="btn_bd">Adicionar Anotação á base de dados</string>
 </resources>

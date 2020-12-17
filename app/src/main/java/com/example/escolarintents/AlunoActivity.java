@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class AlunoActivity extends AppCompatActivity {
 
     TextView alunotel,alunoemail;
-    Button btnemail, btncall,btnmaps;
+    Button btnemail, btncall,btnmaps,btnnote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,13 @@ public class AlunoActivity extends AppCompatActivity {
         alunotel = (TextView)findViewById(R.id.txt_aluno_telefone);
         alunoemail = (TextView)findViewById(R.id.txt_aluno_emaill);
         btnmaps = (Button)findViewById(R.id.btn_maps);
+        btnnote = (Button)findViewById(R.id.btn_note);
 
         btnemail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(AlunoActivity.this, EmailActivity.class);
-                startActivity(in);
+                    @Override
+                    public void onClick(View view) {
+                        Intent in = new Intent(AlunoActivity.this, EmailActivity.class);
+                        startActivity(in);
             }
         });
 
@@ -47,6 +48,14 @@ public class AlunoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AlunoActivity.this, MapsActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnnote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(AlunoActivity.this, FeedActivity.class);
+                startActivity(in);
             }
         });
     }
